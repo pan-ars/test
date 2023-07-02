@@ -8,7 +8,7 @@ options = Options()
 options.add_argument("--window-size=1920,800")
 options.add_argument("--headless")
 
-driver = webdriver.chrome.webdriver.WebDriver(service=chromeService(ChromeDriverManager().install()), options=options)
+driver = webdriver.chrome.webdriver.WebDriver(service=ChromeService(ChromeDriverManager().install()), options=options)
 
 driver.implicitly_wait(10)
 
