@@ -1,5 +1,5 @@
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service as chromeService
+from selenium.webdriver.chrome.service import Service as СhromeService
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
@@ -8,7 +8,7 @@ options = Options()
 options.add_argument("--window-size=1920,800")
 options.add_argument("--headless")
 
-driver = webdriver.chrome(service=chromeService(ChromeDriverManager().install()), options=options)
+driver = webdriver.Сhrome(service=СhromeService(ChromeDriverManager().install()), options=options)
 
 driver.implicitly_wait(10)
 
